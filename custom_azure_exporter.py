@@ -8,7 +8,7 @@ from datetime import datetime, timezone, timedelta
 # Azure credentials
 TENANT_ID = "af2c0734-cb42-464f-b6bf-2a241b6ada56"
 CLIENT_ID = "aa6bdeca-20bc-4241-8772-a7df362b8a39"
-CLIENT_SECRET = os.getenv("AZURE_CLIENT_SECRET")
+CLIENT_SECRET = os.getenv("AZURE_CLIENT_SECRET") #az ad app credential reset --id aa6bdeca-20bc-4241-8772-a7df362b8a39 --query "password"
 SUBSCRIPTION_ID = "3bff15a8-79cf-44d3-b98f-94606c8f3a60"
 RESOURCE_ID = "/subscriptions/3bff15a8-79cf-44d3-b98f-94606c8f3a60/resourceGroups/rg-dev/providers/Microsoft.Web/sites/app-web-ztg2yzezngfmy"
 
