@@ -1,0 +1,7 @@
+azd up
+brew service start grafana (Centralized Log)
+brew services start prometheus (Metrics)
+python3 custom_azure_exporter.py  (Exporter)
+(grafana) : http://localhost:3000/dashboards 
+(exporter) : http://localhost:8000/ 
+(prometheus) : http://localhost:9090/targets
