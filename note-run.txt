@@ -1,7 +1,11 @@
 azd up
 brew service start grafana (Centralized Log)
 brew services start prometheus (Metrics)
+brew services start influxdb
 python3 custom_azure_exporter.py  (Exporter)
 (grafana) : http://localhost:3000/dashboards 
 (exporter) : http://localhost:8000/ 
 (prometheus) : http://localhost:9090/targets
+
+az group list --output table
+az group delete --name rg-dev --yes --no-wait  
